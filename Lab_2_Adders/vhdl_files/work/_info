@@ -1,0 +1,180 @@
+m255
+K3
+13
+cModel Technology
+dE:\Documents\CSC 342_343 Computer Organization\CSC342-343_Computer_Organization_Lab\Lab_1_Comparators
+Emai_one_bit_full_adder_gate
+Z0 w1486922793
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dE:\Documents\CSC 342_343 Computer Organization\CSC342-343_Computer_Organization_Lab\Lab_2_Adders\vhdl_files
+Z4 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_full_adder_gate.vhd
+Z5 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_full_adder_gate.vhd
+l0
+L6
+VKal<oLS@7MY8]G@mXTR^N0
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1486922798.775000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_full_adder_gate.vhd|
+Z9 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_full_adder_gate.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 4U6JhnBaYo]GYI9SC2=<A2
+!i10b 1
+Aarch
+R1
+R2
+DEx4 work 27 mai_one_bit_full_adder_gate 0 22 Kal<oLS@7MY8]G@mXTR^N0
+l13
+L12
+V>W`>T27Ym=H1GgL?flcK92
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 65ahALBl0DJ2_m8H[oUEm3
+!i10b 1
+Emai_one_bit_full_adder_port
+Z12 w1486925646
+R1
+R2
+R3
+Z13 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_full_adder_port.vhd
+Z14 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_full_adder_port.vhd
+l0
+L6
+VO0EWP0DN;f@KCcmiJ<zP22
+R6
+32
+Z15 !s108 1486925650.730000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_full_adder_port.vhd|
+Z17 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_full_adder_port.vhd|
+R10
+R11
+!s100 >[K4730e9IABXVP<LGNBb0
+!i10b 1
+Aarch
+R1
+R2
+DEx4 work 27 mai_one_bit_full_adder_port 0 22 O0EWP0DN;f@KCcmiJ<zP22
+l23
+L12
+VDb:TgL@bXVn;m32c8XeK;1
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 S3b8d_]3N;IG]H0a?mMlW2
+!i10b 1
+Emai_one_bit_half_adder
+Z18 w1486923151
+R1
+R2
+R3
+Z19 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_half_adder.vhd
+Z20 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_half_adder.vhd
+l0
+L6
+VKadei3O`afmeOFCYeY1G^3
+R6
+32
+Z21 !s108 1486923652.056000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_half_adder.vhd|
+Z23 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/mai_one_bit_half_adder.vhd|
+R10
+R11
+!s100 7Yo59_m@I[XcG<R=N2:>V2
+!i10b 1
+Aarch
+R1
+R2
+DEx4 work 22 mai_one_bit_half_adder 0 22 Kadei3O`afmeOFCYeY1G^3
+l13
+L12
+V3_m@1`[d=ahl6iTG0ldT@3
+R6
+32
+R21
+R22
+R23
+R10
+R11
+!s100 MbW8M@4Qk?0N_Ma[HD;4D2
+!i10b 1
+Etest_1b_fadder_gate
+Z24 w1486924368
+R1
+R2
+R3
+Z25 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/test_1b_fadder_gate.vhd
+Z26 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/test_1b_fadder_gate.vhd
+l0
+L6
+V@I:lFnhPzYTZY]L6ggd<[3
+R6
+32
+Z27 !s108 1486924377.749000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/test_1b_fadder_gate.vhd|
+Z29 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/test_1b_fadder_gate.vhd|
+R10
+R11
+!s100 @ZA814jdZUYYlf[k<BDX?2
+!i10b 1
+Aarch_test
+R1
+R2
+DEx4 work 19 test_1b_fadder_gate 0 22 @I:lFnhPzYTZY]L6ggd<[3
+l21
+L10
+VXmTOWZNi=M9KF7o34>S622
+R6
+32
+R27
+R28
+R29
+R10
+R11
+!s100 Di4kdM:e]M0<mh5edQX>i0
+!i10b 1
+Etest_1b_fadder_port
+Z30 w1486925750
+R1
+R2
+R3
+Z31 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/test_1b_fadder_port.vhd
+Z32 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/test_1b_fadder_port.vhd
+l0
+L6
+V16K?EOJz4f38L7<8baRn03
+!s100 hQil>^3ND9]]b0z:az6Ua3
+R6
+32
+!i10b 1
+Z33 !s108 1486925755.475000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/test_1b_fadder_port.vhd|
+Z35 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Adders/vhdl_files/test_1b_fadder_port.vhd|
+R10
+R11
+Aarch_test
+R1
+R2
+DEx4 work 19 test_1b_fadder_port 0 22 16K?EOJz4f38L7<8baRn03
+l21
+L10
+VmzYJoKgLb32@i@T0Ng<Yl0
+!s100 edTXfMUQZ5hSm32B]P?QB0
+R6
+32
+!i10b 1
+R33
+R34
+R35
+R10
+R11
