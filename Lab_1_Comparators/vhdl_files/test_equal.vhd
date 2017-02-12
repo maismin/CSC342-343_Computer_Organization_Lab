@@ -6,14 +6,14 @@ end test_equal;
 
 architecture arch_test of test_equal is
   component mai_equal1
-   port (  I0, I1  : in std_logic;
-           EQ      : out std_logic);
+     port ( I0, I1    : in std_logic;
+            EQ, EQNOT : out std_logic);
   end component;
 
-  signal p1, p0, pout : std_logic;
-  signal error        : std_logic := '0';
+  signal p1, p0, pout, poutc  : std_logic;
+  signal error                : std_logic := '0';
 begin
-  utt: mai_equal1 port map (I0 => p0, I1 => p1, EQ => pout);
+  utt: mai_equal1 port map (I0 => p0, I1 => p1, EQ => pout, EQNOT => poutc);
   process
   begin
     p0 <= '1';

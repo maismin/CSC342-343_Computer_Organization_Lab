@@ -10,16 +10,17 @@ end test_eight_bit_equal_port_map;
 architecture arch_test of test_eight_bit_equal_port_map is
   -- component
   component mai_eight_bit_equal_port is
-    port (  A, B  : in std_logic_vector(7 downto 0);
-            EQ    : out std_logic);
+    port (  A, B      : in std_logic_vector(7 downto 0);
+            EQ, EQNOT : out std_logic);
   end component;
 
   -- intermediate signal declaration
   signal p1, p0 : std_logic_vector(7 downto 0);
   signal pout   : std_logic;
+  signal poutc  : std_logic;
   signal error  : std_logic := '0';
 begin
-  uut: mai_eight_bit_equal_port port map(A => p0, B => p1, EQ => pout);
+  uut: mai_eight_bit_equal_port port map(A => p0, B => p1, EQ => pout, EQNOT => poutc);
   process
     begin
       p0 <= "00000000";
