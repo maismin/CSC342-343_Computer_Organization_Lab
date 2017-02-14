@@ -26,6 +26,5 @@ begin
   H2: mai_equal1 port map (I0 => a(1), I1 => b(1), EQ => e1(0), EQNOT => e1(1));
     
   EQ <= e0(0) and e1(0);
-  EQNOT <= e0(1) and e1(1);
+  EQNOT <= e0(1) or e1(1);
 end arch;
-

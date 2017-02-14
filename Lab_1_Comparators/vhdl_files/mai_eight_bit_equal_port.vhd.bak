@@ -31,5 +31,5 @@ begin
   H7: mai_equal1 port map (I0 => A(7), I1 => B(7), EQ => e(7), EQNOT => en(7));
   
   EQ <= e(0) and e(1) and e(2) and e(3) and e(4) and e(5) and e(6) and e(7);
-  EQNOT <= en(0) and en(1) and en(2) and en(3) and en(4) and en(5) and en(6) and en(7); 
+  EQNOT <= en(0) or en(1) or en(2) or en(3) or en(4) or en(5) or en(6) or en(7); 
 end arch;
