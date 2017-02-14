@@ -2,22 +2,22 @@ m255
 K3
 13
 cModel Technology
-dE:\Documents\CSC 342_343 Computer Organization\CSC342-343_Computer_Organization_Lab\Lab_2_Adders\vhdl_files
+dC:\altera\13.0sp1
 Emai_eight_bit_equal_port
 Z0 w1487048547
 Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z3 dE:\Documents\CSC 342_343 Computer Organization\CSC342-343_Computer_Organization_Lab\Lab_1_Comparators\vhdl_files
-Z4 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_eight_bit_equal_port.vhd
-Z5 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_eight_bit_equal_port.vhd
+Z3 dE:\Documents\CSC 342_343 Computer Organization\CSC342-343_Computer_Organization_Lab\Lab_2_Comparators\vhdl_files
+Z4 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_eight_bit_equal_port.vhd
+Z5 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_eight_bit_equal_port.vhd
 l0
 L6
 V=S_:RjMZd]j5HlZHT^E;e1
 Z6 OV;C;10.1d;51
 32
-Z7 !s108 1487048740.955000
-Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_eight_bit_equal_port.vhd|
-Z9 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_eight_bit_equal_port.vhd|
+Z7 !s108 1487082011.472000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_eight_bit_equal_port.vhd|
+Z9 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_eight_bit_equal_port.vhd|
 Z10 o-work work -2002 -explicit -O0
 Z11 tExplicit 1
 !s100 Ef9I9loS2`G>HKn?e1<iP3
@@ -43,16 +43,16 @@ Z12 w1487023749
 R1
 R2
 R3
-Z13 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_equal1.vhd
-Z14 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_equal1.vhd
+Z13 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_equal1.vhd
+Z14 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_equal1.vhd
 l0
 L6
 VV7k5TNLEHj7Q6=BC^INO[2
 R6
 32
-Z15 !s108 1487048741.092000
-Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_equal1.vhd|
-Z17 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_equal1.vhd|
+Z15 !s108 1487082011.678000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_equal1.vhd|
+Z17 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_equal1.vhd|
 R10
 R11
 !s100 7AYgCI66V[g@fnF2oF35H3
@@ -78,16 +78,16 @@ Z18 w1487048605
 R1
 R2
 R3
-Z19 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_two_bit_equal.vhd
-Z20 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_two_bit_equal.vhd
+Z19 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_two_bit_equal.vhd
+Z20 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_two_bit_equal.vhd
 l0
 L6
 VZXOUBUb_BeWm=QnZ_[`6c0
 R6
 32
-Z21 !s108 1487048741.223000
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_two_bit_equal.vhd|
-Z23 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_two_bit_equal.vhd|
+Z21 !s108 1487082011.836000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_two_bit_equal.vhd|
+Z23 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_two_bit_equal.vhd|
 R10
 R11
 !s100 8hj6CM92X`I=gC3g]kPF;3
@@ -113,16 +113,16 @@ Z24 w1487048743
 R1
 R2
 R3
-Z25 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_two_bit_equal_port.vhd
-Z26 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_two_bit_equal_port.vhd
+Z25 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_two_bit_equal_port.vhd
+Z26 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_two_bit_equal_port.vhd
 l0
 L6
 VAnYZXlNRG<Kf9cON7aVoE2
 R6
 32
-Z27 !s108 1487048743.382000
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_two_bit_equal_port.vhd|
-Z29 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/mai_two_bit_equal_port.vhd|
+Z27 !s108 1487082012.021000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_two_bit_equal_port.vhd|
+Z29 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/mai_two_bit_equal_port.vhd|
 R10
 R11
 !s100 Bm9>4]kS3oOIhg?dg;A5S2
@@ -148,16 +148,16 @@ Z30 w1486918100
 R1
 R2
 R3
-Z31 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_eight_bit_equal_port_map.vhd
-Z32 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_eight_bit_equal_port_map.vhd
+Z31 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_eight_bit_equal_port_map.vhd
+Z32 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_eight_bit_equal_port_map.vhd
 l0
 L6
 Vgh9c]Mf[RKQeId==?zRiA0
 R6
 32
-Z33 !s108 1487048743.511000
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_eight_bit_equal_port_map.vhd|
-Z35 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_eight_bit_equal_port_map.vhd|
+Z33 !s108 1487082012.272000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_eight_bit_equal_port_map.vhd|
+Z35 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_eight_bit_equal_port_map.vhd|
 R10
 R11
 !s100 509>7DYhP^USZE;7n4g_R2
@@ -183,16 +183,16 @@ Z36 w1486909948
 R1
 R2
 R3
-Z37 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_equal.vhd
-Z38 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_equal.vhd
+Z37 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_equal.vhd
+Z38 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_equal.vhd
 l0
 L4
 VJ[R5MO9EJeIodjF:o92<^3
 R6
 32
-Z39 !s108 1487048743.662000
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_equal.vhd|
-Z41 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_equal.vhd|
+Z39 !s108 1487082012.434000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_equal.vhd|
+Z41 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_equal.vhd|
 R10
 R11
 !s100 aVlMo3bXezJn0jc:T<MBV3
@@ -218,16 +218,16 @@ Z42 w1486913740
 R1
 R2
 R3
-Z43 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_two_bit_equal.vhd
-Z44 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_two_bit_equal.vhd
+Z43 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_two_bit_equal.vhd
+Z44 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_two_bit_equal.vhd
 l0
 L6
 Vbbb>K64n[R0I?77>P@fDa0
 R6
 32
-Z45 !s108 1487048743.801000
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_two_bit_equal.vhd|
-Z47 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_two_bit_equal.vhd|
+Z45 !s108 1487082012.578000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_two_bit_equal.vhd|
+Z47 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_two_bit_equal.vhd|
 R10
 R11
 !s100 NRPmQB]hR9nWKdbEVakd_0
@@ -239,7 +239,6 @@ DEx4 work 18 test_two_bit_equal 0 22 bbb>K64n[R0I?77>P@fDa0
 l23
 L10
 VMWf`;:UVGnbSm6[;7BfJ50
-!s100 `>AR`I<=CK?A>eka[lM`O1
 R6
 32
 R45
@@ -247,14 +246,15 @@ R46
 R47
 R10
 R11
+!s100 `>AR`I<=CK?A>eka[lM`O1
 !i10b 1
 Etest_two_bit_equal_port
 Z48 w1487048222
 R1
 R2
 R3
-Z49 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_two_bit_equal_port.vhd
-Z50 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_two_bit_equal_port.vhd
+Z49 8E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_two_bit_equal_port.vhd
+Z50 FE:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_two_bit_equal_port.vhd
 l0
 L6
 V0[EzS2:;6TeN5mhJ?^Cng1
@@ -262,19 +262,19 @@ V0[EzS2:;6TeN5mhJ?^Cng1
 R6
 32
 !i10b 1
-Z51 !s108 1487048743.947000
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_two_bit_equal_port.vhd|
-Z53 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Comparators/vhdl_files/test_two_bit_equal_port.vhd|
+Z51 !s108 1487082012.743000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_two_bit_equal_port.vhd|
+Z53 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_2_Comparators/vhdl_files/test_two_bit_equal_port.vhd|
 R10
 R11
 Aarch_test
 R1
 R2
-Z54 DEx4 work 23 test_two_bit_equal_port 0 22 0[EzS2:;6TeN5mhJ?^Cng1
+DEx4 work 23 test_two_bit_equal_port 0 22 0[EzS2:;6TeN5mhJ?^Cng1
 l22
 L10
-Z55 Vd`i[^gSfJR5AGO@iF3RnA3
-Z56 !s100 H71koXUn?_D2JBT_AW:O]2
+Vd`i[^gSfJR5AGO@iF3RnA3
+!s100 H71koXUn?_D2JBT_AW:O]2
 R6
 32
 !i10b 1

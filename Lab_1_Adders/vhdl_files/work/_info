@@ -2,7 +2,7 @@ m255
 K3
 13
 cModel Technology
-dE:\Documents\CSC 342_343 Computer Organization\CSC342-343_Computer_Organization_Lab\Lab_1_Comparators
+dE:\Documents\CSC 342_343 Computer Organization\CSC342-343_Computer_Organization_Lab\Lab_2_Comparators\vhdl_files
 Emai_four_bit_full_adder
 Z0 w1486963879
 Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
@@ -15,7 +15,7 @@ L6
 V]m_LIkSYz@Z^aTnE[X31]0
 Z6 OV;C;10.1d;51
 32
-Z7 !s108 1487072377.126000
+Z7 !s108 1487082140.513000
 Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/mai_four_bit_full_adder.vhd|
 Z9 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/mai_four_bit_full_adder.vhd|
 Z10 o-work work -2002 -explicit -O0
@@ -50,7 +50,7 @@ L6
 VKal<oLS@7MY8]G@mXTR^N0
 R6
 32
-Z15 !s108 1487072377.266000
+Z15 !s108 1487082140.675000
 Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/mai_one_bit_full_adder_gate.vhd|
 Z17 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/mai_one_bit_full_adder_gate.vhd|
 R10
@@ -85,7 +85,7 @@ L6
 VO0EWP0DN;f@KCcmiJ<zP22
 R6
 32
-Z21 !s108 1487072377.389000
+Z21 !s108 1487082140.846000
 Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/mai_one_bit_full_adder_port.vhd|
 Z23 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/mai_one_bit_full_adder_port.vhd|
 R10
@@ -120,7 +120,7 @@ L6
 VKadei3O`afmeOFCYeY1G^3
 R6
 32
-Z27 !s108 1487072377.572000
+Z27 !s108 1487082141.032000
 Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/mai_one_bit_half_adder.vhd|
 Z29 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/mai_one_bit_half_adder.vhd|
 R10
@@ -155,7 +155,7 @@ L6
 V@I:lFnhPzYTZY]L6ggd<[3
 R6
 32
-Z33 !s108 1487072377.718000
+Z33 !s108 1487082141.194000
 Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/test_1b_fadder_gate.vhd|
 Z35 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/test_1b_fadder_gate.vhd|
 R10
@@ -190,7 +190,7 @@ L6
 V16K?EOJz4f38L7<8baRn03
 R6
 32
-Z39 !s108 1487072377.870000
+Z39 !s108 1487082141.434000
 Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/test_1b_fadder_port.vhd|
 Z41 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/test_1b_fadder_port.vhd|
 R10
@@ -204,7 +204,6 @@ DEx4 work 19 test_1b_fadder_port 0 22 16K?EOJz4f38L7<8baRn03
 l21
 L10
 VmzYJoKgLb32@i@T0Ng<Yl0
-!s100 edTXfMUQZ5hSm32B]P?QB0
 R6
 32
 R39
@@ -212,6 +211,7 @@ R40
 R41
 R10
 R11
+!s100 edTXfMUQZ5hSm32B]P?QB0
 !i10b 1
 Etest_4b_fadder
 Z42 w1487001686
@@ -227,7 +227,7 @@ VTC`EiPD<zP5JQY8YJnKeY2
 R6
 32
 !i10b 1
-Z45 !s108 1487072378.027000
+Z45 !s108 1487082141.655000
 Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/test_4b_fadder.vhd|
 Z47 !s107 E:/Documents/CSC 342_343 Computer Organization/CSC342-343_Computer_Organization_Lab/Lab_1_Adders/vhdl_files/test_4b_fadder.vhd|
 R10
@@ -235,11 +235,11 @@ R11
 Aarch_test
 R1
 R2
-Z48 DEx4 work 14 test_4b_fadder 0 22 TC`EiPD<zP5JQY8YJnKeY2
+DEx4 work 14 test_4b_fadder 0 22 TC`EiPD<zP5JQY8YJnKeY2
 l25
 L10
-Z49 VOH>C_`o]Y2oMAQ]eMjRZY3
-Z50 !s100 [o;[9m`Xz]iKnoWM]Yhi61
+VOH>C_`o]Y2oMAQ]eMjRZY3
+!s100 [o;[9m`Xz]iKnoWM]Yhi61
 R6
 32
 !i10b 1
