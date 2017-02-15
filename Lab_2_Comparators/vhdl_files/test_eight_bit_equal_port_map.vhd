@@ -1,6 +1,7 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
 
 -- entity
 entity test_eight_bit_equal_port_map is
@@ -25,66 +26,17 @@ begin
     begin
       p0 <= "00000000";
       p1 <= "00000000";
-      wait for 1 ns;
-      if (pout = '0') then
-        error <= '1';
-      end if;
       
-      wait for 200 ns;
-      p0 <= "01010101";
-      p1 <= "00010101";
-      wait for 1 ns;
-      if (pout = '1') then
-        error <= '1';
-      end if;
-      
-      wait for 200 ns;
-      p0 <= "01100101";
-      p1 <= "11111001";
-      wait for 1 ns;
-      if (pout = '1') then
-        error <= '1';
-      end if;
-      
-      wait for 200 ns;
-      p0 <= "11110011";
-      p1 <= "00010100";
-      wait for 1 ns;
-      if (pout = '1') then
-        error <= '1';
-      end if;
-      
-      wait for 200 ns;
-      p0 <= "11001100";
-      p1 <= "11001100";
-      wait for 1 ns;
-      if (pout = '0') then
-        error <= '1';
-      end if;
-
-      wait for 200 ns;
-      p0 <= "10010001"; 
-      p1 <= "11100111";
-      wait for 1 ns;
-      if (pout = '1') then
-        error <= '1';
-      end if;
-
-      wait for 200 ns;
-      p0 <= "10111001";
-      p1 <= "10111001";
-      wait for 1 ns;
-      if (pout = '0') then
-        error <= '1';
-      end if;
-      
-      wait for 200 ns;
-      p0 <= "11010011";
-      p1 <= "01101001";
-      wait for 1 ns;
-      if (pout = '1') then
-        error <= '1';
-      end if;
+      for I in 0 to 255 loop
+        for J in 0 to 255 loop
+          wait for 200 ns;
+          if ((p0 = p1) and (pout /= '1')) then
+            error <= '1';
+          end if;   
+          p1 <= p1 + "00000001";
+        end loop;
+        p0 <= p0 + "00000001";
+      end loop;
 
       wait for 200 ns;
       if (error = '0') then

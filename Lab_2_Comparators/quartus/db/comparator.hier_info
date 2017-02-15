@@ -1,4 +1,88 @@
-|mai_equal1
+|mai_eight_bit_equal_port
+A[0] => mai_equal1:H0.I0
+A[1] => mai_equal1:H1.I0
+A[2] => mai_equal1:H2.I0
+A[3] => mai_equal1:H3.I0
+A[4] => mai_equal1:H4.I0
+A[5] => mai_equal1:H5.I0
+A[6] => mai_equal1:H6.I0
+A[7] => mai_equal1:H7.I0
+B[0] => mai_equal1:H0.I1
+B[1] => mai_equal1:H1.I1
+B[2] => mai_equal1:H2.I1
+B[3] => mai_equal1:H3.I1
+B[4] => mai_equal1:H4.I1
+B[5] => mai_equal1:H5.I1
+B[6] => mai_equal1:H6.I1
+B[7] => mai_equal1:H7.I1
+EQ <= EQ.DB_MAX_OUTPUT_PORT_TYPE
+EQNOT <= EQNOT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_eight_bit_equal_port|mai_equal1:H0
+I0 => p1.IN0
+I0 => p0.IN0
+I1 => p1.IN1
+I1 => p0.IN1
+EQ <= p2.DB_MAX_OUTPUT_PORT_TYPE
+EQNOT <= p2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_eight_bit_equal_port|mai_equal1:H1
+I0 => p1.IN0
+I0 => p0.IN0
+I1 => p1.IN1
+I1 => p0.IN1
+EQ <= p2.DB_MAX_OUTPUT_PORT_TYPE
+EQNOT <= p2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_eight_bit_equal_port|mai_equal1:H2
+I0 => p1.IN0
+I0 => p0.IN0
+I1 => p1.IN1
+I1 => p0.IN1
+EQ <= p2.DB_MAX_OUTPUT_PORT_TYPE
+EQNOT <= p2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_eight_bit_equal_port|mai_equal1:H3
+I0 => p1.IN0
+I0 => p0.IN0
+I1 => p1.IN1
+I1 => p0.IN1
+EQ <= p2.DB_MAX_OUTPUT_PORT_TYPE
+EQNOT <= p2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_eight_bit_equal_port|mai_equal1:H4
+I0 => p1.IN0
+I0 => p0.IN0
+I1 => p1.IN1
+I1 => p0.IN1
+EQ <= p2.DB_MAX_OUTPUT_PORT_TYPE
+EQNOT <= p2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_eight_bit_equal_port|mai_equal1:H5
+I0 => p1.IN0
+I0 => p0.IN0
+I1 => p1.IN1
+I1 => p0.IN1
+EQ <= p2.DB_MAX_OUTPUT_PORT_TYPE
+EQNOT <= p2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_eight_bit_equal_port|mai_equal1:H6
+I0 => p1.IN0
+I0 => p0.IN0
+I1 => p1.IN1
+I1 => p0.IN1
+EQ <= p2.DB_MAX_OUTPUT_PORT_TYPE
+EQNOT <= p2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_eight_bit_equal_port|mai_equal1:H7
 I0 => p1.IN0
 I0 => p0.IN0
 I1 => p1.IN1

@@ -1,0 +1,121 @@
+|mai_four_bit_full_adder
+X[0] => mai_one_bit_full_adder_port:FA0.X
+X[1] => mai_one_bit_full_adder_port:FA1.X
+X[2] => mai_one_bit_full_adder_port:FA2.X
+X[3] => mai_one_bit_full_adder_port:FA3.X
+Y[0] => mai_one_bit_full_adder_port:FA0.Y
+Y[1] => mai_one_bit_full_adder_port:FA1.Y
+Y[2] => mai_one_bit_full_adder_port:FA2.Y
+Y[3] => mai_one_bit_full_adder_port:FA3.Y
+Cin => mai_one_bit_full_adder_port:FA0.Cin
+Sum[0] <= mai_one_bit_full_adder_port:FA0.Sum
+Sum[1] <= mai_one_bit_full_adder_port:FA1.Sum
+Sum[2] <= mai_one_bit_full_adder_port:FA2.Sum
+Sum[3] <= mai_one_bit_full_adder_port:FA3.Sum
+Cout <= mai_one_bit_full_adder_port:FA3.Cout
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA0
+X => mai_one_bit_half_adder:H1.X
+Y => mai_one_bit_half_adder:H1.Y
+Cin => mai_one_bit_half_adder:H2.X
+Sum <= mai_one_bit_half_adder:H2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA0|mai_one_bit_half_adder:H1
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA0|mai_one_bit_half_adder:H2
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA1
+X => mai_one_bit_half_adder:H1.X
+Y => mai_one_bit_half_adder:H1.Y
+Cin => mai_one_bit_half_adder:H2.X
+Sum <= mai_one_bit_half_adder:H2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA1|mai_one_bit_half_adder:H1
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA1|mai_one_bit_half_adder:H2
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA2
+X => mai_one_bit_half_adder:H1.X
+Y => mai_one_bit_half_adder:H1.Y
+Cin => mai_one_bit_half_adder:H2.X
+Sum <= mai_one_bit_half_adder:H2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA2|mai_one_bit_half_adder:H1
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA2|mai_one_bit_half_adder:H2
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA3
+X => mai_one_bit_half_adder:H1.X
+Y => mai_one_bit_half_adder:H1.Y
+Cin => mai_one_bit_half_adder:H2.X
+Sum <= mai_one_bit_half_adder:H2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA3|mai_one_bit_half_adder:H1
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mai_four_bit_full_adder|mai_one_bit_full_adder_port:FA3|mai_one_bit_half_adder:H2
+X => Sum.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

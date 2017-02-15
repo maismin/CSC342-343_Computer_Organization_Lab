@@ -1,0 +1,7 @@
+To, Location
+A[0], PIN_N25
+A[1], PIN_B13
+B[0], PIN_N26
+B[1], PIN_A13
+EQ, PIN_AE23
+EQNOT, PIN_AF23

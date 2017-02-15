@@ -1,0 +1,5 @@
+To, Location
+X, PIN_N25
+Y, PIN_N26
+Sum, PIN_AE23
+Cout, PIN_AF23
