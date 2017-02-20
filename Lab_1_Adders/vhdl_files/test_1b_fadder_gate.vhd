@@ -1,6 +1,7 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.MAI_PackageAdders.all;
 
 -- entity
 entity test_1b_fadder_gate is
@@ -8,11 +9,6 @@ end test_1b_fadder_gate;
 
 -- architecture
 architecture arch_test of test_1b_fadder_gate is
-  -- component ----------------------------
-  component mai_one_bit_full_adder_gate
-     port ( X, Y, Cin : in std_logic;
-            Sum, Cout : out std_logic);
-  end component;
 
   -- intermediate signal declaration ------
   signal t_x, t_y, t_cin  : std_logic;

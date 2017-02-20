@@ -1,25 +1,21 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
+use MAI_PackageAdders.all;
 
 -- entity
-entity test_1b_fadder_gate is
-end test_1b_fadder_gate;
+entity test_1b_fadder_port is
+end test_1b_fadder_port;
 
 -- architecture
-architecture arch_test of test_1b_fadder_gate is
-  -- component ----------------------------
-  component mai_one_bit_full_adder_gate
-     port ( X, Y, Cin : in std_logic;
-            Sum, Cout : out std_logic);
-  end component;
+architecture arch_test of test_1b_fadder_port is
 
   -- intermediate signal declaration ------
   signal t_x, t_y, t_cin  : std_logic;
   signal t_out            : std_logic_vector(1 downto 0); -- t_out(1) contains the Cout, t_out(0) contains Sum
   signal error            : std_logic := '0';
 begin
-  utt: mai_one_bit_full_adder_gate port map (X => t_x, Y => t_y, Cin => t_cin, Sum => t_out(0), Cout => t_out(1));
+  utt: mai_one_bit_full_adder_port port map (X => t_x, Y => t_y, Cin => t_cin, Sum => t_out(0), Cout => t_out(1));
   process
   begin
     t_x <= '0';

@@ -24,8 +24,5 @@ package MAI_PackageAdders is
           Sum  : out std_logic_vector(3 downto 0);
           Cout : out std_logic);
   end component;
-end package MAI_PackageAdders;
-
-package body MAI_PackageAdders is
   
-end package body MAI_PackageAdders;
+end package MAI_PackageAdders;

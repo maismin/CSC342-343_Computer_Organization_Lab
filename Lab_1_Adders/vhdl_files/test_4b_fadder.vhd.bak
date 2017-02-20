@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
-
+use work.MAI_PackageAdders.all;
 
 -- entity
 entity test_4b_fadder is
@@ -12,14 +12,6 @@ end test_4b_fadder;
 -- architecture
 architecture arch_test of test_4b_fadder is
   -- component
-  -- 4 bit full adder ---------------------------
-  component mai_four_bit_full_adder
-  port (  X, Y : in std_logic_vector(3 downto 0);
-          Cin  : in std_logic;
-          Sum  : out std_logic_vector(3 downto 0);
-          Cout : out std_logic);
-  end component;
-
   -- intermediate signal declarations
   signal t_x, t_y, t_sum  : std_logic_vector(3 downto 0);
   signal t_cin, t_cout    : std_logic;
@@ -39,9 +31,6 @@ begin
       for J in 0 to 15 loop
         wait for 200 ns;
         -- Check value of Sum
---        assert (t_sum = (t_x + t_y)) 
---        report "unexpected value: " & INTEGER'IMAGE(to_integer(unsigned(t_sum)))
---        severity warning;
         if (t_sum /= (t_x + t_y)) then
           report "ERROR: " & INTEGER'IMAGE(to_integer(unsigned(t_x))) & 
                  " + " & INTEGER'IMAGE(to_integer(unsigned(t_y))) & 

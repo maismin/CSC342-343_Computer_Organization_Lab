@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
-
+use work.MAI_PackageAdders.all;
 
 -- entity
 entity test_4b_fadder is
@@ -11,15 +11,6 @@ end test_4b_fadder;
 
 -- architecture
 architecture arch_test of test_4b_fadder is
-  -- component
-  -- 4 bit full adder ---------------------------
-  component mai_four_bit_full_adder
-  port (  X, Y : in std_logic_vector(3 downto 0);
-          Cin  : in std_logic;
-          Sum  : out std_logic_vector(3 downto 0);
-          Cout : out std_logic);
-  end component;
-
   -- intermediate signal declarations
   signal t_x, t_y, t_sum  : std_logic_vector(3 downto 0);
   signal t_cin, t_cout    : std_logic;

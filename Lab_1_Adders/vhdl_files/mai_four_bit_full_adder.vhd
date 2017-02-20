@@ -1,6 +1,7 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.MAI_PackageAdders.all;
 
 -- entity
 entity mai_four_bit_full_adder is
@@ -12,12 +13,6 @@ end mai_four_bit_full_adder;
 
 -- architecture
 architecture arch of mai_four_bit_full_adder is
-  -- component
-  -- 1 bit full adder
-  component mai_one_bit_full_adder_port is
-  port (  X, Y, Cin : in std_logic;
-          Sum, Cout : out std_logic);
-  end component;
   
   -- intermediate signal declaration
   signal c : std_logic_vector(3 downto 0);

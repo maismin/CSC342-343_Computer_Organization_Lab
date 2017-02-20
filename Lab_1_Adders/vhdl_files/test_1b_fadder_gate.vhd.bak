@@ -10,8 +10,8 @@ end test_1b_fadder_gate;
 architecture arch_test of test_1b_fadder_gate is
   -- component ----------------------------
   component mai_one_bit_full_adder_gate
-     port (  X, Y, Cin : in std_logic;
-          Sum, Cout : out std_logic);
+     port ( X, Y, Cin : in std_logic;
+            Sum, Cout : out std_logic);
   end component;
 
   -- intermediate signal declaration ------

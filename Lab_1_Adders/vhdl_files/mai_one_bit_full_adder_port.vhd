@@ -1,6 +1,7 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.MAI_PackageAdders.all;
 
 -- entity
 entity mai_one_bit_full_adder_port is
@@ -10,14 +11,7 @@ end mai_one_bit_full_adder_port;
 
 -- architecture
 architecture arch of mai_one_bit_full_adder_port is
-  -- component
-  
-  -- 1 bit half adder ------------------
-  component mai_one_bit_half_adder
-  port (  X, Y      : in std_logic;
-          Sum, Cout : out std_logic);
-  end component;
-  
+
   -- intermediate signal declaration
   signal ha1s, ha1c, ha2c, t_sum : std_logic;
 begin
