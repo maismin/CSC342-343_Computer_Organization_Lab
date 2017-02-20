@@ -2,6 +2,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all;
 
 
 -- entity
@@ -39,6 +40,10 @@ begin
         wait for 200 ns;
         -- Check value of Sum
         if (t_sum /= (t_x + t_y)) then
+          report "ERROR: " & INTEGER'IMAGE(to_integer(unsigned(t_x))) & 
+                 " + " & INTEGER'IMAGE(to_integer(unsigned(t_y))) & 
+                 " = " & INTEGER'IMAGE(to_integer(unsigned(t_sum))) & 
+                 ", SUM should be " & INTEGER'IMAGE(to_integer(unsigned(t_x+t_y)));
           error <= '1';
         end if;
         t_y <= t_y + "0001";
