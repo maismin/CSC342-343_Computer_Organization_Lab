@@ -1,6 +1,7 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.MAI_PackageComparators.all;
 
 -- entity
 entity mai_eight_bit_equal_port is
@@ -10,13 +11,6 @@ end mai_eight_bit_equal_port;
 
 -- architecture
 architecture arch of mai_eight_bit_equal_port is
-  -- Component --------------------------------
-  
-  -- 1 bit comparator
-  component mai_equal1
-  port (  I0, I1    : in std_logic;
-          EQ, EQNOT : out std_logic);
-  end component;
   
   -- intermediate signal declaration
   signal e, en  : std_logic_vector(7 downto 0);

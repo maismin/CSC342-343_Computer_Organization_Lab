@@ -2,6 +2,8 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all;
+use work.MAI_PackageComparators.all;
 
 -- entity
 entity test_eight_bit_equal_port_map is
@@ -9,11 +11,6 @@ end test_eight_bit_equal_port_map;
 
 -- architecture
 architecture arch_test of test_eight_bit_equal_port_map is
-  -- component
-  component mai_eight_bit_equal_port is
-    port (  A, B      : in std_logic_vector(7 downto 0);
-            EQ, EQNOT : out std_logic);
-  end component;
 
   -- intermediate signal declaration
   signal p1, p0 : std_logic_vector(7 downto 0);
@@ -31,6 +28,9 @@ begin
         for J in 0 to 255 loop
           wait for 200 ns;
           if ((p0 = p1) and (pout /= '1')) then
+            report "ERROR: " & INTEGER'IMAGE(to_integer(unsigned(p0))) & 
+                 " = " & INTEGER'IMAGE(to_integer(unsigned(p1))) & 
+                 " but EQ is 0. EQ should be 1.";
             error <= '1';
           end if;   
           p1 <= p1 + "00000001";

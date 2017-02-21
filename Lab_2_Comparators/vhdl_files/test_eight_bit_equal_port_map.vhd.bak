@@ -2,6 +2,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all;
 
 -- entity
 entity test_eight_bit_equal_port_map is
@@ -30,7 +31,10 @@ begin
       for I in 0 to 255 loop
         for J in 0 to 255 loop
           wait for 200 ns;
-          if ((p0 = p1) and (pout /= '0')) then
+          if ((p0 = p1) and (pout /= '1')) then
+            report "ERROR: " & INTEGER'IMAGE(to_integer(unsigned(p0))) & 
+                 " = " & INTEGER'IMAGE(to_integer(unsigned(p1))) & 
+                 " but EQ is 0. EQ should be 1.";
             error <= '1';
           end if;   
           p1 <= p1 + "00000001";

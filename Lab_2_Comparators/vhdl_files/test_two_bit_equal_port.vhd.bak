@@ -10,8 +10,8 @@ end test_two_bit_equal_port;
 architecture arch_test of test_two_bit_equal_port is
   -- component
   component mai_two_bit_equal_port 
-  port (  A, B  : in std_logic_vector(1 downto 0);
-          EQ, EQNOT  : out std_logic);
+  port (  A, B      : in std_logic_vector(1 downto 0);
+          EQ, EQNOT : out std_logic);
   end component;
   
   -- intermediate signal declaration

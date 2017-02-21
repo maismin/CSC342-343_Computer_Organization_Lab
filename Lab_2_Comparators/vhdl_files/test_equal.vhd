@@ -1,15 +1,13 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.MAI_PackageComparators.all;
 
 entity test_equal is
 end test_equal;
 
 architecture arch_test of test_equal is
-  component mai_equal1
-     port ( I0, I1    : in std_logic;
-            EQ, EQNOT : out std_logic);
-  end component;
 
+  -- intermediate signal declarations
   signal p1, p0, pout, poutc  : std_logic;
   signal error                : std_logic := '0';
 begin

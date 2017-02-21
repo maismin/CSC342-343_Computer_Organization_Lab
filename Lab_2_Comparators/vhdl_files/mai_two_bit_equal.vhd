@@ -10,6 +10,7 @@ end mai_two_bit_equal;
 
 -- architecture
 architecture arch of mai_two_bit_equal is
+  
   -- intermediate signal declaration
   signal p0, p1, p2, p3, p4 : std_logic;
 begin

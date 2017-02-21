@@ -21,4 +21,3 @@ begin
   p3 <= (not (A(1) or B(1))) and (not (A(0) or B(0)));
   p4 <= p0 or p1 or p2 or p3;
 end arch;
-

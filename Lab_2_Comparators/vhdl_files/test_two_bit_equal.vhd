@@ -1,6 +1,7 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.MAI_PackageComparators.all;
 
 -- entity
 entity test_two_bit_equal is
@@ -8,11 +9,6 @@ end test_two_bit_equal;
 
 -- architecture
 architecture arch_test of test_two_bit_equal is
--- component ------------------------------------
-  component mai_two_bit_equal
-    port (  A, B      : in std_logic_vector(1 downto 0);
-            EQ, EQNOT : out std_logic);
-  end component;
   
   -- intermediate signal declaration
   signal p1, p0 : std_logic_vector(1 downto 0);
