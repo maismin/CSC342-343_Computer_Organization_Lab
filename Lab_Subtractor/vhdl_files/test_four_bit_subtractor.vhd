@@ -2,6 +2,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use IEEE.std_logic_signed.all;
 use work.MAI_PackageSubtractors.all;
 
 -- entity
@@ -22,7 +23,7 @@ begin
     -- variable declaration
     variable int_x, int_y : integer range -8 to 7;
     variable int_sum      : integer range -16 to 14;      -- holds the value calculated from the entity
-    variable int_calc_sum : integer range -16 to 14;      -- holds the calculated value of int_x - int_y
+    variable int_calc_sum : integer range -16 to 15;      -- holds the calculated value of int_x - int_y
     variable errSum, errV, errN, errZ: boolean := false;  -- variables used to check for errors
     
     begin
@@ -36,7 +37,7 @@ begin
           int_x := to_integer(signed(t_x));
           int_y := to_integer(signed(t_y));
           int_sum := to_integer(signed(t_s));
-          int_calc_sum := to_integer((signed(t_x)) - (signed(t_y)));
+          int_calc_sum := to_integer(signed(t_x - t_y));
           
           -- checks for potential errors
           -- is the Zero bit incorrect?
@@ -56,7 +57,7 @@ begin
           end if;
           
           -- is the Overflow bit incorrect?
-          if (((int_x >= 0 and int_y < 0 and int_calc_sum < 0) or (int_x < 0 and int_y >= 0 and int_calc_sum >= 0)) and t_v /= '1') then
+          if (((int_x >= 0 and int_y < 0 and int_sum < 0) or (int_x < 0 and int_y >= 0 and int_sum >= 0)) and t_v /= '1') then
             errV := true;
             v_v <= '1';
           else
