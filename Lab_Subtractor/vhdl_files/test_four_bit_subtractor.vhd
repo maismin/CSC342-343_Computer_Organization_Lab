@@ -65,7 +65,7 @@ begin
           end if;
           
           -- is the Negative bit incorrect?
-          if (int_sum < 0 and t_n /= '1') then
+          if (int_calc_sum < 0 and t_n /= '1') then
             errN := true;
             v_z <= '1';
           else

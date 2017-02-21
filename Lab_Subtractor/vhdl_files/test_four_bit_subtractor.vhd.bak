@@ -12,9 +12,9 @@ end test_four_bit_subtractor;
 architecture arch_test of test_four_bit_subtractor is
 
   -- intermediate signal declaration
-  signal t_x, t_y, t_s         : std_logic_vector(3 downto 0);
-  signal t_cout, t_v, t_n, t_z : std_logic;
-  signal v_v, v_n, v_z         : std_logic := '0';
+  signal t_x, t_y, t_s         : std_logic_vector(3 downto 0);  -- external signals
+  signal t_cout, t_v, t_n, t_z : std_logic;                     -- external signals
+  signal v_v, v_n, v_z         : std_logic := '0';              
   signal error                 : std_logic := '0';
 begin
   uut: mai_four_bit_subtractor port map(X => t_x, Y => t_y, SUM => t_s, Cout => t_cout, V => t_v, N => t_n, Z => t_z);
