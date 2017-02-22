@@ -1,8 +1,9 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
-use IEEE.std_logic_unsigned.all;
+--use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
+use work.MAI_PackageComparators.all;
 
 -- entity
 entity test_eight_bit_equal_port_map is
@@ -10,11 +11,6 @@ end test_eight_bit_equal_port_map;
 
 -- architecture
 architecture arch_test of test_eight_bit_equal_port_map is
-  -- component
-  component mai_eight_bit_equal_port is
-    port (  A, B      : in std_logic_vector(7 downto 0);
-            EQ, EQNOT : out std_logic);
-  end component;
 
   -- intermediate signal declaration
   signal p1, p0 : std_logic_vector(7 downto 0);
@@ -37,9 +33,9 @@ begin
                  " but EQ is 0. EQ should be 1.";
             error <= '1';
           end if;   
-          p1 <= p1 + "00000001";
+          p1 <= std_logic_vector((unsigned(p1) + 1);
         end loop;
-        p0 <= p0 + "00000001";
+        p0 <= std_logic_vector((unsigned(p0) + 1);
       end loop;
 
       wait for 200 ns;
