@@ -61,7 +61,7 @@ begin
           end if;
           wait for 100 ns;
 -- Error Display ---------------------------------------------------------------------------------
-        if (int_sum /= int_calc_sum) then
+          if (int_sum /= int_calc_sum) then
             error <= '1';
             report "Error: (" & INTEGER'IMAGE(int_x) & 
                  ") - (" & INTEGER'IMAGE(int_y) & ")" &LF& 
@@ -76,8 +76,7 @@ begin
                  ", N = " & STD_LOGIC'IMAGE(v_n) &
                  ", Z = " & STD_LOGIC'IMAGE(v_z);
           end if;
--- ------------------------------------------------------------------------------------------------  
-               
+-- ------------------------------------------------------------------------------------------------              
           t_x <= std_logic_vector(unsigned(t_x) + 1);
         end loop;
         t_y <= std_logic_vector(unsigned(t_y) + 1);
