@@ -24,7 +24,7 @@ begin
   t_yn <= not Y;
   MUX: mai_2to1_8bit_mux port map(SEL => SEL, Y => Y, Ynot => t_yn, MUX_OUT => t_y);
   Low4: mai_four_bit_subtractor port map(X => X(3 downto 0), 
-                                         Y => t_y,
+                                         Y => t_y(3 downto 0),
                                          Cin => SEL,
                                          SUM => t_s(3 downto 0), 
                                          Cout => t_cin, 
@@ -33,8 +33,8 @@ begin
                                          Z => t_z(0));
                                          
   High4: mai_four_bit_subtractor port map(X => X(7 downto 4), 
-                                         Y => Y(7 downto 4),
-                                         Cin => t_cin,
+                                         Y => t_y(7 downto 4),
+                                         Cin => SEL,
                                          SUM => t_s(7 downto 4), 
                                          Cout => t_cout, 
                                          V => t_v, 
