@@ -2,7 +2,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use IEEE.std_logic_signed.all;
 use work.MAI_PackageSubtractors.all;
 
 -- entity
@@ -18,13 +17,12 @@ architecture arch_test of test_four_bit_subtractor is
   signal v_v, v_n, v_z                : std_logic := '0';              
   signal error                        : std_logic := '0';
 begin
-  uut: mai_four_bit_subtractor port map(X => t_x, Y => t_y_not, SUM => t_s, Cin => t_cin, Cout => t_cout, V => t_v, N => t_n, Z => t_z);
+  uut: mai_four_bit_subtractor port map(X => t_x, Y => t_y, SUM => t_s, Cin => t_cin, Cout => t_cout, V => t_v, N => t_n, Z => t_z);
   process
     -- variable declaration
     variable int_x, int_y : integer range -8 to 7;
-    variable int_sum      : integer range -16 to 14;      -- holds the value calculated from the entity
-    variable int_calc_sum : integer range -16 to 15;      -- holds the calculated value of int_x - int_y
-    variable errSum, errV, errN, errZ: boolean := false;  -- variables used to check for errors
+    variable int_sum      : integer range -8 to 7;      -- holds the value calculated from the entity
+    variable int_calc_sum : integer range -8 to 7;      -- holds the calculated value of int_x - int_y
     
     begin
       t_x <= "0000";
@@ -37,60 +35,48 @@ begin
           int_x := to_integer(signed(t_x));
           int_y := to_integer(signed(t_y));
           int_sum := to_integer(signed(t_s));
-          int_calc_sum := to_integer(signed(t_x - t_y));
           
-          -- checks for potential errors
-          -- is the Zero bit incorrect?
-          if ((int_x = int_y) and t_z /= '1') then
-            errZ := true;
+          int_calc_sum := to_integer(signed(t_x) - signed(t_y));
+          
+          -- calculate what the actual output should be and compare with output from 4 bit subtractor component
+          -- check if Zero bit is correct         
+          if (int_calc_sum = 0) then
             v_z <= '1';
           else
-            errZ := false;
             v_z <= '0';
           end if;
-          
-          -- is the Sum incorrect?
-          if (int_sum /= int_calc_sum) then
-            errSum := true;
-          else
-            errSum := false;
-          end if;
-          
+                    
           -- is the Overflow bit incorrect?
-          if (((int_x >= 0 and int_y < 0 and int_sum < 0) or (int_x < 0 and int_y >= 0 and int_sum >= 0)) and t_v /= '1') then
-            errV := true;
+          if ((int_x >= 0 and int_y < 0 and int_calc_sum < 0) or (int_x < 0 and int_y >= 0 and int_calc_sum >= 0)) then
             v_v <= '1';
           else
-            errV := false;
             v_v <= '0';
           end if;
           
           -- is the Negative bit incorrect?
-          if (int_calc_sum < 0 and t_n /= '1') then
-            errN := true;
-            v_z <= '1';
+          if (int_calc_sum < 0) then
+            v_n <= '1';
           else
-            errN := false;
-            v_z <= '0';
+            v_n <= '0';
           end if;
-
+          wait for 100 ns;
 -- Error Display ---------------------------------------------------------------------------------
-          if (errZ or errSum or errV or errN) then
+        if (int_sum /= int_calc_sum) then
             error <= '1';
             report "Error: (" & INTEGER'IMAGE(int_x) & 
                  ") - (" & INTEGER'IMAGE(int_y) & ")" &LF& 
                  "Output of 4Bit Subtractor:" &LF&
                  "SUM = " & INTEGER'IMAGE(int_sum) &
-                 " V = " & STD_LOGIC'IMAGE(t_v) &
-                 " N = " & STD_LOGIC'IMAGE(t_n) &
-                 " Z = " & STD_LOGIC'IMAGE(t_z) &LF&
+                 ", V = " & STD_LOGIC'IMAGE(t_v) &
+                 ", N = " & STD_LOGIC'IMAGE(t_n) &
+                 ", Z = " & STD_LOGIC'IMAGE(t_z) &LF&
                  "The real output should be:" &LF&
                  "SUM = " & INTEGER'IMAGE(int_calc_sum) &
-                 " V = " & STD_LOGIC'IMAGE(v_v) &
-                 " N = " & STD_LOGIC'IMAGE(v_n) &
-                 " Z = " & STD_LOGIC'IMAGE(v_z);
+                 ", V = " & STD_LOGIC'IMAGE(v_v) &
+                 ", N = " & STD_LOGIC'IMAGE(v_n) &
+                 ", Z = " & STD_LOGIC'IMAGE(v_z);
           end if;
--- ------------------------------------------------------------------------------------------------ 
+-- ------------------------------------------------------------------------------------------------  
                
           t_x <= std_logic_vector(unsigned(t_x) + 1);
         end loop;
