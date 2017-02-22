@@ -29,8 +29,8 @@ begin
       t_y <= "0000";
       t_cin <= '1';
       
-      for I in 0 to 255 loop
-        for J in 0 to 255 loop
+      for I in 0 to 15 loop
+        for J in 0 to 15 loop
           wait for 200 ns;
           int_x := to_integer(signed(t_x));
           int_y := to_integer(signed(t_y));
