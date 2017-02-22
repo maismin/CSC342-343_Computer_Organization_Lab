@@ -1,7 +1,7 @@
 library IEEE;
 use     IEEE.std_logic_1164.all;
 
-package MAI_PackageSubtractors is
+package MAI_PackageMux is
   
   component mai_four_bit_subtractor
   port (  X, Y : in std_logic_vector(3 downto 0);
@@ -13,5 +13,4 @@ package MAI_PackageSubtractors is
           Z    : out std_logic);
   end component;
   
-end package MAI_PackageSubtractors;
-
+end package MAI_PackageMux;

@@ -13,12 +13,12 @@ end test_four_bit_subtractor;
 architecture arch_test of test_four_bit_subtractor is
 
   -- intermediate signal declaration
-  signal t_x, t_y, t_s         : std_logic_vector(3 downto 0);  -- external signals
-  signal t_cout, t_v, t_n, t_z : std_logic;                     -- external signals
-  signal v_v, v_n, v_z         : std_logic := '0';              
-  signal error                 : std_logic := '0';
+  signal t_x, t_y, t_s                : std_logic_vector(3 downto 0);  -- external signals
+  signal t_cout, t_v, t_n, t_z, t_cin : std_logic;                     -- external signals
+  signal v_v, v_n, v_z                : std_logic := '0';              
+  signal error                        : std_logic := '0';
 begin
-  uut: mai_four_bit_subtractor port map(X => t_x, Y => t_y, SUM => t_s, Cout => t_cout, V => t_v, N => t_n, Z => t_z);
+  uut: mai_four_bit_subtractor port map(X => t_x, Y => t_y_not, SUM => t_s, Cin => t_cin, Cout => t_cout, V => t_v, N => t_n, Z => t_z);
   process
     -- variable declaration
     variable int_x, int_y : integer range -8 to 7;
@@ -29,15 +29,15 @@ begin
     begin
       t_x <= "0000";
       t_y <= "0000";
+      t_cin <= '1';
       
       for I in 0 to 255 loop
         for J in 0 to 255 loop
           wait for 200 ns;
-          
           int_x := to_integer(signed(t_x));
           int_y := to_integer(signed(t_y));
           int_sum := to_integer(signed(t_s));
-          int_calc_sum := int_x - int_y;
+          int_calc_sum := to_integer(signed(t_x - t_y));
           
           -- checks for potential errors
           -- is the Zero bit incorrect?
