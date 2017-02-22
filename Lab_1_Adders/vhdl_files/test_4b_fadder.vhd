@@ -1,7 +1,6 @@
 -- library declaration
 library IEEE;
 use IEEE.std_logic_1164.all;
-use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
 use work.MAI_PackageAdders.all;
 
@@ -19,6 +18,10 @@ architecture arch_test of test_4b_fadder is
 begin
   t:  mai_four_bit_full_adder port map(X => t_x, Y => t_y, Cin => t_cin, Sum => t_sum, Cout => t_cout);
   process
+    -- variable declaration
+    variable int_x, int_y   : integer range 0 to 15;
+    variable int_sum        : integer range 0 to 15;      -- holds the value calculated from the entity
+    variable int_calc_sum   : integer range 0 to 15;      -- holds the calculated value of int_x - int_y
   begin
     t_x <= "0000";
     t_y <= "0000";
@@ -28,26 +31,27 @@ begin
     for I in 0 to 15 loop
       -- Loop over all values of Y
       for J in 0 to 15 loop
-        wait for 200 ns;
+        wait for 100 ns;
+        int_x := to_integer(unsigned(t_x));
+        int_y := to_integer(unsigned(t_y));
+        int_sum := to_integer(unsigned(t_sum));                     -- output of 4 bit adder unit
+        int_calc_sum := to_integer(unsigned(t_x) + unsigned(t_y));  -- output of expected value
+        
         -- Check value of Sum
-        if (t_sum /= (t_x + t_y)) then
-          report "ERROR: " & INTEGER'IMAGE(to_integer(unsigned(t_x))) & 
-                 " + " & INTEGER'IMAGE(to_integer(unsigned(t_y))) & 
-                 " = " & INTEGER'IMAGE(to_integer(unsigned(t_sum))) & 
-                 ", SUM should be " & INTEGER'IMAGE(to_integer(unsigned(t_x+t_y)));
-          error <= '1';
-        end if;
-        t_y <= t_y + "0001";
+        assert (int_sum = int_calc_sum)
+          report "ERROR: " & INTEGER'IMAGE(int_x) & 
+                 " + " & INTEGER'IMAGE(int_y) & 
+                 " = " & INTEGER'IMAGE(int_sum) & 
+                 ", SUM should be " & INTEGER'IMAGE(int_calc_sum)
+          severity failure;
+
+        t_y <= std_logic_vector(unsigned(t_y) + 1);
       end loop;
-      t_x <= t_x + "0001";
+      t_x <= std_logic_vector(unsigned(t_x) + 1);
     end loop;
     
-    wait for 200 ns;
+    wait for 100 ns;
       
-    if (error = '0') then
-      report "No errors detected. Simulation successful" severity failure;
-    else
-      report "Error detected" severity failure;
-    end if;
+    report "No errors detected. Simulation successful" severity failure;
   end process;
 end arch_test;
