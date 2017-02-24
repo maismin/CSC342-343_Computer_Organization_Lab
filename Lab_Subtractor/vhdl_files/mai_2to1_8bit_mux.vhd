@@ -1,7 +1,6 @@
 -- library declarations
 library IEEE;
 use IEEE.std_logic_1164.all;
-use work.MAI_PackageSubtractors.all;
 
 -- entity declaration
 entity mai_2to1_8bit_mux is
