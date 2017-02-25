@@ -33,7 +33,7 @@ architecture arch of mai_operations is
         when "000" =>
           RESULT <= A and B;
         when "001" =>
-          RESULT <= A or B;
+          RESULT <= A and B;
         when "010" =>
           RESULT <= A xor B;
         when "011" =>
@@ -50,5 +50,5 @@ architecture arch of mai_operations is
           NULL;
         end case;
       end if;
-    end process
+    end process;
 end arch;
