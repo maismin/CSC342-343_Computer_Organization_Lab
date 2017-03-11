@@ -7,5 +7,6 @@ Lab_Tutorial_Quartus_and_ModelSim_Download_and_Setup/Lab_1_Tutorial - Quartus an
 **/*.mti
 **/vhdl_files/work
 **/*.docx
+**/transcript
 /Reports
 Lab_3_Bitwise Shift_Rotations/Mai_Lab_3_Operations.pdf
