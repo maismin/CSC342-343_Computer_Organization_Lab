@@ -11,5 +11,7 @@ end mai_e_seg;
 -- architecture
 architecture data_flow of mai_e_seg is
   begin
-    E <= X(0) or (X(2) and (not X(1)));
+    E <=  (not X(3) and X(0)) or
+          (not X(3) and X(2) and not X(1)) or
+          (not X(2) and not X(1) and X(0));
 end data_flow;

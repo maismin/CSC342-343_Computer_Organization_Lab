@@ -12,4 +12,4 @@ end mai_a_seg;
 architecture data_flow of mai_a_seg is
   begin
     A <= (X(2) and (not X(1)) and (not X(0))) or ((not X(3)) and (not X(2)) and (not X(1)) and X(0));
-end arch;
+end data_flow;
