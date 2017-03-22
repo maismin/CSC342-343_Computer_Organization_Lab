@@ -1,0 +1,17 @@
+To, Location
+Cin, PIN_V1
+X[0], PIN_N25
+X[1], PIN_N26
+X[2], PIN_P25
+X[3], PIN_AE14
+Y[0], PIN_AF14
+Y[1], PIN_AD13
+Y[2], PIN_AC13
+Y[3], PIN_C13
+Sum[0], PIN_AE22
+Sum[1], PIN_AF22
+Sum[2], PIN_W19
+Sum[3], PIN_V18
+CGout, PIN_AE23
+CPout, PIN_AF23
+Overflow, PIN_AB21
