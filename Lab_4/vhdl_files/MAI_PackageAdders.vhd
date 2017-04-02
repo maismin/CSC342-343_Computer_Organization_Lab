@@ -37,4 +37,11 @@ package MAI_PackageAdders is
           CGout, CPout, Overflow : out std_logic);
   end component;
   
+  component mai_eight_bit_CLA_adder
+  port (  X, Y : in std_logic_vector(7 downto 0);
+          Cin  : in std_logic;
+          Sum  : out std_logic_vector(7 downto 0);
+          CGout, CPout, Overflow : out std_logic);
+  end component;
+  
 end package MAI_PackageAdders;

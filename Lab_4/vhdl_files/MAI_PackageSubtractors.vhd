@@ -21,7 +21,19 @@ package MAI_PackageSubtractors is
          V    : out std_logic;
          N    : out std_logic;
          Z    : out std_logic);
-  end component; 
+  end component;
+  
+  component mai_eight_bit_CLA_add_sub
+  port ( X, Y : in std_logic_vector(7 downto 0);
+         SEL  : in std_logic;   -- 1 for subtract, 0 for add
+         SUM  : out std_logic_vector(7 downto 0);
+         Cout : out std_logic;
+         CGout: out std_logic;
+         CPout: out std_logic;
+         V    : out std_logic;
+         N    : out std_logic;
+         Z    : out std_logic);
+  end component;
   
 end package MAI_PackageSubtractors;
 

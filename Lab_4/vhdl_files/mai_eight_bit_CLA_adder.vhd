@@ -16,23 +16,23 @@ end mai_eight_bit_CLA_adder;
 architecture arch of mai_eight_bit_CLA_adder is
   -- intermediate signal declarations
   signal cg, cp, carry  : std_logic_vector(7 downto 0);
-  signal cout, t_g : std_logic;
-  signal t_p : std_logic_vector(1 downto 0);
+  signal cout  : std_logic;
+  signal t_p, t_g : std_logic_vector(1 downto 0);
 begin
   carry(0) <= Cin;
-  carry(4) <= t_g or (t_p(0) and Cin);
+  carry(4) <= t_g(0) or (t_p(0) and Cin);
   
   CLA1: mai_CLA_4_Bit_Logic port map( G => cg(3 downto 0), 
                                       P => cp(3 downto 0), 
                                       Cin => Cin, 
                                       Cout => carry(3 downto 1), 
-                                      CGout => t_g, 
+                                      CGout => t_g(0), 
                                       CPout => t_p(0));  
   CLA2: mai_CLA_4_Bit_Logic port map( G => cg(7 downto 4), 
                                       P => cp(7 downto 4), 
-                                      Cin => Cin, 
+                                      Cin => carry(4), 
                                       Cout => carry(7 downto 5), 
-                                      CGout => cout, 
+                                      CGout => t_g(1), 
                                       CPout => t_p(1));
   
   FAO : mai_one_bit_full_adder_g_p port map(X => X(0), Y => Y(0), Cin => carry(0), Sum => Sum(0), G => cg(0), P => cp(0));
@@ -44,9 +44,9 @@ begin
   FA6 : mai_one_bit_full_adder_g_p port map(X => X(6), Y => Y(6), Cin => carry(6), Sum => Sum(6), G => cg(6), P => cp(6));
   FA7 : mai_one_bit_full_adder_g_p port map(X => X(7), Y => Y(7), Cin => carry(7), Sum => Sum(7), G => cg(7), P => cp(7));
   
-  CGout <= cout;
+  CGout <= t_g(1);
   CPout <= t_p(1);
-  Overflow <= carry(3) xor cout;
+  Overflow <= carry(3) xor (t_g(1) or (t_p(1) and carry(0)));
 end arch;
 
 

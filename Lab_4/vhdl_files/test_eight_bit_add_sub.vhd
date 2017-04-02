@@ -2,7 +2,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use work.MAI_PackageSubtractors.all;
+use work.MAI_PackageSubtractors.mai_eight_bit_CLA_add_sub;
 
 -- entity
 entity test_eight_bit_add_sub is
@@ -15,7 +15,7 @@ architecture arch_test of test_eight_bit_add_sub is
   signal t_x, t_y, t_s                : std_logic_vector(7 downto 0);  -- external signals
   signal t_cout, t_v, t_n, t_z, t_cin : std_logic;                     -- external signals
 begin
-  uut: mai_eight_bit_add_sub port map(X => t_x, Y => t_y, SUM => t_s, SEL => t_cin, Cout => t_cout, V => t_v, N => t_n, Z => t_z);
+  uut: mai_eight_bit_CLA_add_sub port map(X => t_x, Y => t_y, SUM => t_s, SEL => t_cin, Cout => t_cout, V => t_v, N => t_n, Z => t_z);
   process
     -- variable declaration
     variable int_x, int_y   : integer range -128 to 127;
